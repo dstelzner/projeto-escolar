@@ -1,0 +1,13 @@
+<div class="dashboard">
+  <mat-grid-list cols="3" rowHeight="1:1">
+     <mat-grid-tile *ngFor="let botao of botoes">
+      <div class="dashboard__info">
+        <button mat-fab extended color="primary" class="dashboard__button" (click)="onClickButton(botao.area)">
+          <mat-icon class="dashboard__button--icon">{{ botao.icone }}</mat-icon>
+        </button>
+          <p class="dashboard__text">{{botao.area}}</p>
+      </div>
+      <div *ngIf="botao.area == 'Avisos'" class="dashboard__notificacao"></div>
+     </mat-grid-tile>
+  </mat-grid-list>
+</div>

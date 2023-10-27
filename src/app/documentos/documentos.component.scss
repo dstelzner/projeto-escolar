@@ -1,0 +1,39 @@
+@import './../images.scss';
+
+.declaracao {
+  font-family: sans-serif;
+  color: #4F4F4F;
+  padding: 20px;
+
+  &__logo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60px;
+    height: 60px;
+    padding: 20px 0px 0px 20px;
+    background-image: url($logo);
+    margin: 0 auto;
+  }
+
+  &__titulo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  &__corpo, &__rodape {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  &__botao {
+    margin-top: 50px;
+  }
+
+  &__botao-div {
+    margin: 0 auto;
+    width: max-content;
+  }
+}

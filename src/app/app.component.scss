@@ -1,0 +1,14 @@
+@import './images.scss';
+
+.header {
+  height: 30px;
+  padding: 5px;
+
+  &__nome {
+    text-align: center;
+    color: #4F4F4F;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,29 @@
+.agenda {
+  &__titulo {
+    position: fixed;
+    color: #4F4F4F;
+    font-weight: bold;
+    font-size: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: sans-serif;
+  }
+
+  &__acordion {
+    margin-top: 40px;
+  }
+
+  &__dia {
+    font-weight: bold;
+  }
+}
+
+.mat-expansion-panel-header-title {
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #4F4F4F;
+}
+
+::ng-deep .mat-expansion-panel-body{
+  font-family: sans-serif;
+}

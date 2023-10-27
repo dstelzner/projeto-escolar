@@ -1,0 +1,26 @@
+
+<p class="agenda__titulo">Agenda</p>
+<div class="agenda">
+  <div class="agenda__acordion">
+    <mat-accordion *ngFor="let mes of meses">
+      <mat-expansion-panel (opened)="expandido = true"
+                           (closed)="expandido = false">
+        <mat-expansion-panel-header>
+          <mat-panel-title class="agenda_titulo--painel">
+            {{ mes.mes }}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <div *ngFor="let dia of mes.dias">
+          <mat-divider></mat-divider>
+          <br>
+          <p class="agenda__dia">{{ dia }}</p>
+          <p *ngIf="dia !== 5 && dia !== 2">Nenhum evento</p>
+          <p *ngIf="dia === 5">Avaliação de Língua Portuguesa</p>
+          <p *ngIf="dia === 5">Avaliação de Matemática</p>
+          <p *ngIf="dia === 2">Evento cultural</p>
+          <mat-divider></mat-divider>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+</div>

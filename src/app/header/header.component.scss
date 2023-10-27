@@ -1,0 +1,35 @@
+@import './../images.scss';
+
+.header {
+    font-family: sans-serif;
+    display: flex;
+    height: 150px;
+
+    &__logo {
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 120px;
+        height: 120px;
+        padding: 20px 0px 0px 20px;
+        background-image: url($logo);
+    }
+    &__info {
+        text-align: right;
+        padding-top: 20px;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    &__nome {
+        color: #363636;
+        font-size: 20px;
+        line-height: 20px;
+        font-weight: bold;
+    }
+
+    &__escola, &__serie {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 14px;
+        color: #4F4F4F;
+    }
+}
